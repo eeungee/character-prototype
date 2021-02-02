@@ -1,0 +1,68 @@
+*{
+  padding : 0;
+  margin : 0;
+}
+
+.Name_container {
+  background-color: white;
+  height: 800px;
+  text-align: center;
+  padding-top: 300px;
+}
+
+.title {
+  color: #4682b4;
+  font-family: 'SDSamliphopangche_Outline';
+  font-size: 60px;
+}
+
+.name {
+  width : 200px;
+  height: 50px;
+  margin: 50px 0 20px 0;
+  text-align: center;
+  font-family: 'Yuto';
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 3px darkgray;
+}
+
+.name:active {
+  outline: none;
+}
+
+.start {
+  width: 200px;
+  height: 40px;
+  color: #1F2932;
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Yuto';
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 3px darkgray;
+}
+
+.start:hover{
+  background-color: #3f98fd;
+  font-size: 20px;
+}
+
+.start:active{
+  outline: none;
+}
+
+@font-face {
+  font-family: 'SDSamliphopangche_Outline';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yuto';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
