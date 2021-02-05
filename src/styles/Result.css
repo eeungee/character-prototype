@@ -47,6 +47,30 @@ img {
     padding-top: 30px;
 }
 
+
+button {
+    width: 200px;
+    height: 40px;
+    color: #1F2932;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Yuto';
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 3px darkgray;
+    margin: 40px 0 80px 0;
+  }
+
+button:hover{
+    background-color: #3f98fd;
+    font-size: 20px;
+  }
+  
+button:active{
+    outline: none;
+  }
+
+  
 @font-face {
     font-family: 'Yuto';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
