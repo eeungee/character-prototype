@@ -75,6 +75,10 @@
     padding-top: 180px;
   }
 
+  .name{
+    box-shadow: 1px 1px 3px darkgray;  
+  }
+
   .question {
       font-family: 'Yuto';
       color: black;
