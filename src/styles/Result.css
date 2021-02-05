@@ -24,15 +24,27 @@ img {
     font-size: 25px;
 }
 
+.user_type{
+    font-size: 18px;
+}
 
 .type{
     color: #1F2932;
     width: 500px;
-    height: 500px;
     text-align: center;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
+}
+
+.effect{
+    color: #1F2932;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 30px;
 }
 
 @font-face {

@@ -11,6 +11,7 @@ class Result extends React.Component{
             result: "",
             you: "", 
             descrip: "",
+            effect: ""
         }
     }
 
@@ -28,7 +29,9 @@ class Result extends React.Component{
         console.log("RESULT : ", resultArr)
         this.setState({
             result: merge,
-            you: resultArr[0].you, descrip :resultArr[0].descrip,
+            you: resultArr[0].you, 
+            descrip :resultArr[0].descrip, 
+            effect: resultArr[0].effect
         })
         
     }
@@ -37,8 +40,10 @@ class Result extends React.Component{
         return <div className="result">
             <img />
             <p className="character">{this.state.result}</p>
-            <p className="you">{this.props.userName} <br /><br /> {this.state.you}</p>
-            <div className="type">{this.state.descrip}</div>
+            <p className="you">{this.props.userName} <br /><br /> 
+            <span className="user_type">당신과 가장 잘 어울리는 차는</span>  {this.state.you} !</p>
+            <div className="type"><p>성격특징</p>{this.state.descrip}</div>
+            <div className="effect"><p>효능</p>{this.state.effect}</div>
         </div>
     }
 }
