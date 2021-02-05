@@ -66,3 +66,24 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@media (max-width:450px){
+  .Name_container {
+    background-color: white;
+    height: 800px;
+    text-align: center;
+    padding-top: 180px;
+  }
+
+  .question {
+      font-family: 'Yuto';
+      color: black;
+      width: 350px;
+      margin: 0 auto;
+  }
+
+  .btn__container{
+      width: 350px;
+      height: 500px;   
+  }
+}
