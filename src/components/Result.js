@@ -10,7 +10,8 @@ class Result extends React.Component{
             result: "",
             you: "", 
             descrip: "",
-            effect: ""
+            effect: "", 
+            image: ""
         }
     }
 
@@ -30,14 +31,15 @@ class Result extends React.Component{
             result: merge,
             you: resultArr[0].you, 
             descrip :resultArr[0].descrip, 
-            effect: resultArr[0].effect
+            effect: resultArr[0].effect,
+            image: resultArr[0].image
         })
         
     }
 
     render(){
         return <div className="result">
-            <img />
+            <img src={`../../public/images/${this.state.image}`} />
             <p className="character">{this.state.result}</p>
             <p className="you">{this.props.userName} <br /><br /> 
             <span className="user_type">가장 잘 어울리는 차는</span>  {this.state.you} !</p>
