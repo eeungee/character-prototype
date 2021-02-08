@@ -41,7 +41,7 @@ class Result extends React.Component{
 
     render(){
         return <div className="result">
-            {this.state.image && <img style={{ width:300, height:180}} src={URL+ this.state.image} /> }
+            {this.state.image && <img style={{ width:300, height:180}} src={URL+ this.state.image} alt="TEA" /> }
             <p className="character">{this.state.result}</p>
             <p className="you">{this.props.userName} <br /><br /> 
             <span className="user_type">가장 잘 어울리는 차는</span>  {this.state.you} !</p>
