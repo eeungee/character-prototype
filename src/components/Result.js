@@ -2,6 +2,8 @@ import React from 'react';
 import { myAnsw } from '../myAnsw';
 import '../styles/Result.css'
 
+const URL = process.env.PUBLIC_URL
+
 class Result extends React.Component{
 
     constructor(props){
@@ -38,8 +40,9 @@ class Result extends React.Component{
     }
 
     render(){
+        console.log(`${URL}/public/images/${this.state.image}`)
         return <div className="result">
-            <img src={`../../public/images/${this.state.image}`} />
+            <img src={`${URL}/public/images/${this.state.image}`} />
             <p className="character">{this.state.result}</p>
             <p className="you">{this.props.userName} <br /><br /> 
             <span className="user_type">가장 잘 어울리는 차는</span>  {this.state.you} !</p>
